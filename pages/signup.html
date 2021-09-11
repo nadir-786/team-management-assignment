@@ -8,51 +8,52 @@
     <!-- ************** Bootstrap CDN Link *************** -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- *********** Custom Style CDN Link ****************** -->
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/auth.css">
-    <script src="./js/main.js"></script>
-
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/auth.css">
     <title>Team Management</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
             <div class="w-100 text-center">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/logo/logo-black.png" height="50" class="logo-image" alt="">
+                    <img src="../assets/logo/logo-white.png" height="50" class="logo-image" alt="">
                 </a>
             </div>
         </div>
     </nav>
     <main>
         <section class="auth-section bg-light" id="login">
-            <form id="loginForm" class="login-form" action="">
+            <form id="signupForm" class="login-form" action="">
                 <div class="container">
                     <div class="section-logo-container mb-3">
-                    <img src="./assets/logo/logo-black.png" height="50" class="logo-image" alt="">
+                    <img src="../assets/logo/logo-black.png" height="50" class="logo-image" alt="">
                     </div>
                     <div class="text-center mb-3">
-                        <span> <strong>WELCOME</strong></span>
-                     </div>
+                       <span> <strong> Create Your Account</strong></span>
+                    </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="loginEmail"
+                        <input type="text" class="form-control" id="signupFullName"
+                            placeholder="Full Name" />
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="signupEmail"
                             placeholder="Email Address" />
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control" id="loginPassword"
+                        <input type="password" class="form-control" id="signupPassword"
                             placeholder="Password" />
                     </div>
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-dark" type="submit">Login</button>
+                        <button class="btn btn-dark" type="submit">Signup</button>
                       </div>
                       <div class="mb-3 mt-3 text-center">
                        <span>OR</span>
                       </div>
                       <div class="mb-3 mt-3 text-center">
-                        <a href="./pages/signup.html">Create Your Own Account</a>
+                        <a href="../index.html">Already Have an Account</a>
                     </div>
                 </div>
             </form>
@@ -61,10 +62,11 @@
     <!-- ************ Alert Sweet CDN Link ***************** -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- ************ Bootstrap CDN Link ***************** -->
-    <script type="module" src="./bootstrap/bootstrap.bundle.js"></script>
+    <script type="module" src="../bootstrap/bootstrap.bundle.js"></script>
 
     <!-- ************ Custom Javscript File Link ***************** -->
-    <script src="./js/auth.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
 </body>
 
 </html>

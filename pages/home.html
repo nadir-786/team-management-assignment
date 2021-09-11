@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ************** Bootstrap CDN Link *************** -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- ************** FontAwesome Icons CDN Link *************** -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- *********** Custom Style CDN Link ****************** -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Team Management</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <div class="w-100 text-center">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/logo/logo-white.png" height="50" class="logo-image" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="auth-section bg-light" id="login">
+            <div class="team-sect">
+                <h3 class="text-center"><span class="teams-heading"> Teams You Own</span></h3>
+                <div id="teams-you-own" class="teams-cards-cont">
+
+                </div>
+            </div>
+            <div class="team-sect">
+                <h3 class="text-center"><span class="teams-heading">Teams You Are Part Of</span></h3>
+                <div id="teams-you-part" class="teams-cards-cont">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <button class="float">
+        <i class="fa fa-plus my-float"></i>
+    </button>
+    <!-- ************ Alert Sweet CDN Link ***************** -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- ************ Bootstrap CDN Link ***************** -->
+    <script type="module" src="../bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- ************ Custom Javscript File Link ***************** -->
+    <script src="../js/home.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

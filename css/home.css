@@ -1,0 +1,18 @@
+.auth-section{
+    min-height: 90vh;
+}
+.section-logo-container{
+    text-align: center;
+}
+.auth-form{
+ margin-top: 100px;   
+}
+.team-sect{
+    min-height: 250px;
+    padding: 10px;
+}
+.teams-heading{
+    background-color: #189AD3;
+    color: #fff;
+    padding: 5px 10px;
+}
