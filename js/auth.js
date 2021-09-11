@@ -31,8 +31,9 @@ document.getElementById("loginForm")?.addEventListener('submit', (e) => {
             text: "Successfully Logged In",
             icon: "success",
             button: "Okay",
+        }).then(()=>{
+            window.location.replace("/pages/home.html")
         });
-        window.location.replace("/pages/home.html")
     } else {
         return swal({
             title: "ERROR!",
@@ -76,6 +77,8 @@ document.getElementById("signupForm")?.addEventListener('submit', (e) => {
         text: "Successfully Created Your Account!",
         icon: "success",
         button: "Okay",
-    })
+    }).then(()=>{
+        window.location.replace("/index.html");
+    });
 
 })

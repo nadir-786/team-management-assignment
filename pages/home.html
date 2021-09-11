@@ -43,14 +43,20 @@
         <section class="auth-section bg-light" id="login">
             <div class="team-sect">
                 <h3 class="text-center"><span class="teams-heading"> Teams You Own</span></h3>
-                <div id="teams-you-own" class="teams-cards-cont">
+                <div class="teams-cards-cont container">
+
+                    <div id="teams-you-own"  class="row">
+                        
+                    </div>
 
                 </div>
             </div>
             <div class="team-sect">
                 <h3 class="text-center"><span class="teams-heading">Teams You Are Part Of</span></h3>
-                <div id="teams-you-part" class="teams-cards-cont">
-
+                <div  class="teams-cards-cont">
+                    <div id="teams-you-part"  class="row">
+                        
+                    </div>
                 </div>
             </div>
             <!-- Add Team Modal -->
@@ -69,8 +75,8 @@
                                     <input type="text" class="form-control" id="team-name">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="team-name" class="col-form-label">Team Category:</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <label for="team-category" class="col-form-label">Team Category:</label>
+                                    <select id="team-category" class="form-select" aria-label="Default select example">
                                         <option selected value="category">Category</option>
                                         <option value="Testing Team">Testing Team</option>
                                         <option value="Development team">Development team</option>
@@ -80,8 +86,10 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button id="team-modal-close" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button onclick="handleSaveTeam()" type="button" class="btn btn-primary">Save changes</button>
+                            <button id="team-modal-close" type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Close</button>
+                            <button onclick="handleSaveTeam()" type="button" class="btn btn-primary">Save
+                                changes</button>
                         </div>
                     </div>
                 </div>
@@ -97,8 +105,8 @@
     <script type="module" src="../bootstrap/bootstrap.bundle.js"></script>
 
     <!-- ************ Custom Javscript File Link ***************** -->
-    <script src="../js/home.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/home.js"></script>
 </body>
 
 </html>
