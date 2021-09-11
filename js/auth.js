@@ -32,6 +32,7 @@ document.getElementById("loginForm")?.addEventListener('submit', (e) => {
             icon: "success",
             button: "Okay",
         });
+        window.location.replace("/pages/home.html")
     } else {
         return swal({
             title: "ERROR!",

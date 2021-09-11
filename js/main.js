@@ -19,3 +19,8 @@ const GlobalStorage = () => {
 //     }
 // }
 // checkUserState()
+
+const handleLogout = () =>{
+    GlobalStorage().removeItem('currentUser');
+    window.location.href = "/"
+}
