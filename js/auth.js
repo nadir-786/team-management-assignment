@@ -32,7 +32,7 @@ document.getElementById("loginForm")?.addEventListener('submit', (e) => {
             icon: "success",
             button: "Okay",
         }).then(()=>{
-            window.location.replace("/pages/home.html")
+            window.location.replace("./pages/home.html")
         });
     } else {
         return swal({
@@ -78,7 +78,7 @@ document.getElementById("signupForm")?.addEventListener('submit', (e) => {
         icon: "success",
         button: "Okay",
     }).then(()=>{
-        window.location.replace("/index.html");
+        window.location.replace("../index.html");
     });
 
 })

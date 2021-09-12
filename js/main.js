@@ -22,5 +22,5 @@ const GlobalStorage = () => {
 
 const handleLogout = () =>{
     GlobalStorage().removeItem('currentUser');
-    window.location.href = "/"
+    window.location.replace("../index.html");
 }
