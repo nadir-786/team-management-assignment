@@ -34,7 +34,7 @@ const getAllTeams = () => {
     const allTeams = GlobalStorage().getItem('allTeams');
     const currentUser = GlobalStorage().getItem('currentUser');
     document.getElementById('teams-you-own').innerHTML = '';
-    if(allTeams.length === 0 || allTeams){
+    if(allTeams.length === 0 || !allTeams){
         document.getElementById('teams-you-part').innerHTML = '<h3 class="text-center">You Do Not Have Any Team</h3>';
          document.getElementById('teams-you-own').innerHTML = '<h3 class="text-center">You Do Not Have Any Team</h3>';
          return
